@@ -14,9 +14,9 @@ public class Todos {
     }
 
     public void removeTask(String task) {
-        for (String s : allTasks) {
-            if (s.equals(task)) {
-                allTasks.remove(s);
+        for (String job : allTasks) {
+            if (job.equals(task)) {
+                allTasks.remove(job);
                 break;
             }
         }
