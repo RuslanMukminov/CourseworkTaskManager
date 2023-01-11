@@ -4,11 +4,11 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 public class Todos {
-    private final int sizeAllTasks = 7;
+    private static final int SIZE_ALL_TASKS = 7;
     protected List<String> allTasks = new ArrayList<>();
 
     public void addTask(String task) {
-        if (allTasks.size() < sizeAllTasks) {
+        if (allTasks.size() < SIZE_ALL_TASKS) {
             allTasks.add(task);
         }
     }
