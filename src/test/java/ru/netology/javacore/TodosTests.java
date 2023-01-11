@@ -12,7 +12,7 @@ public class TodosTests {
         todos.addTask(task);
         int sizeTasksExpected = 1;
 
-        Assertions.assertEquals(sizeTasksExpected, todos.allTasks.size());
+        Assertions.assertEquals(sizeTasksExpected, todos.setTasks.size());
     }
 
     @Test
@@ -21,7 +21,7 @@ public class TodosTests {
         todos.removeTask(task);
         int sizeTasksExpected = 0;
 
-        Assertions.assertEquals(sizeTasksExpected, todos.allTasks.size());
+        Assertions.assertEquals(sizeTasksExpected, todos.setTasks.size());
     }
 
     @Test
@@ -30,6 +30,6 @@ public class TodosTests {
         for (int i = 0; i < sizeTasksExpected + 1; i++) {
             todos.addTask(task + i);
         }
-        Assertions.assertEquals(sizeTasksExpected, todos.allTasks.size());
+        Assertions.assertEquals(sizeTasksExpected, todos.setTasks.size());
     }
 }
